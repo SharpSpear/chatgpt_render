@@ -67,9 +67,7 @@ function Header() {
 				</nav> : <nav id="nav-wrap">				
 					<ul id="nav" className="nav" style={{float:"right"}}>
 						<li>
-							<a href="/register">
-								Register
-							</a>
+							<Link to="/register">Register</Link>
 						</li>
 						<li>
 							<a href="/login">
