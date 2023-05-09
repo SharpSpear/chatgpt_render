@@ -2,7 +2,7 @@ import React from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
 import {useSelector, useDispatch} from "react-redux";
-import { useHistory} from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import {login} from "../../actions/register";
 
 function Header() {
