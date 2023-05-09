@@ -37,15 +37,15 @@ function Header() {
 						</li>
 
 						<li>
-							<a  href="/survey">
+							<Link  to="/survey">
 								Survey
-							</a>
+							</Link>
 						</li>
 
 						<li>
-							<a  href="/chatgpt">
+							<Link  to="/chatgpt">
 								ChatGPT
-							</a>
+							</Link>
 						</li>
 
 						<li>
@@ -59,9 +59,9 @@ function Header() {
 							</a>
 						</li>
 						<li style={{float:"right"}}>
-							<a href="/" onClick={logout}>
+							<Link to="/" onClick={logout}>
 								Log out
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav> : <nav id="nav-wrap">				
@@ -70,9 +70,9 @@ function Header() {
 							<Link to="/register">Register</Link>
 						</li>
 						<li>
-							<a href="/login">
+							<Link to="/login">
 								Log in
-							</a>
+							</Link>
 						</li>
 						</ul>
 				</nav>
