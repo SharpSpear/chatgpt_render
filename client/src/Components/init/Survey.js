@@ -75,7 +75,7 @@ const Survey = () => {
 	const handleChange = async ({responseId}) =>{
 		startAnimation();		
 		const survey_token = process.env.REACT_APP_TOKEN;
-		const surveyData = await Axios.post("http://localhost:5000/users/survey", {token: survey_token});
+		const surveyData = await Axios.post("https://maksimkholin-chatgpt-deploy.onrender.com/users/survey", {token: survey_token});
 		// console.log("555555555555555555", surveyData.data.items[0]);
 		dispatch(Survey_data(surveyData));
 		// history.push('/');

@@ -47,7 +47,7 @@ const ChatGPT = () => {
 			const output1 = await res.data.choices[0].message.content;
 			setOutput(output1)
 			const respon = await Axios.post(
-				"http://localhost:5000/users/save",
+				"https://maksimkholin-chatgpt-deploy.onrender.com/users/save",
 				{input,output1}
 			)
 			// .then(() => {

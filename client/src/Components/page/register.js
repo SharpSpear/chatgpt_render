@@ -64,7 +64,7 @@ export default function Register() {
 
 		try {
 			const newUser = { email, password, firstName, lastName };
-			const respond = await Axios.post("http://localhost:5000/users/register", newUser);
+			const respond = await Axios.post("https://maksimkholin-chatgpt-deploy.onrender.com/users/register", newUser);
 			addToast("Register successfully!", {
 				appearance: 'info',
 				autoDismiss: true,
